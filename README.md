@@ -8,7 +8,7 @@ This is Js File Scanner . Which are scan  in js file and  find juicy information
 ```
 git clone https://github.com/0x240x23elu/JSScanner.git
 cd JSScanner
-pip3 install -r  requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Note
