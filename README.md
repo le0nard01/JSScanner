@@ -1,6 +1,5 @@
 # JSScanner
-Js File Scanner
-This is Js File Scanner . Which are scan  in js file and  find juicy information Toke,Password Etc.
+This is scanner for js files. Which are scan in js files and find juicy information: tokens, passwords, urls etc.
 
 [![Watch the video](https://img.youtube.com/vi/hsT5BL_EV-g/1.jpg)](https://www.youtube.com/watch?v=hsT5BL_EV-g)
 
@@ -14,8 +13,8 @@ pip3 install -r requirements.txt
 ## Note
 
 ```
-If you Want to Add New Regex , Please check Regex in python regex checker . Regex File Regex.txt
-Output file bydefault output.txt
+If you want to add new regex, Please check regex in python regex checker. Default regex file is regex.txt
+default output file is out.txt
 ```
 
 ## How to Use
@@ -28,34 +27,13 @@ echo "example.com" | waybackurls | httpx > live.txt
 ```
 ```
 python3 JSScanner.py
-Please Enter Any File: text.txt (your links file)
-Path Of Regex/Patten File: regex.txt (your regex file)
+Path of the file containing the urls: text.txt (your links file)
+Path of the file containing the regex: regex.txt (your regex file)
 ```
-## Open redirect 
-
-```
- Now JSScanner fetch open redirect param from Live site
- Copy Below Regex in Regex.txt
- 
- (next=|url=|target=|rurl=|dest=|destination=|redir=|redirect_uri=|redirect_url=|redirect=|/redirect/|cgi-bin/|redirect.cgi|/out/|/out|view=|loginto=|image_url=|go=|return=|returnTo=|return_to=|checkout_url=|dest=|redirect=|uri=|path=|continue=|url=|window=|to=|out=|view=|dir=|show=|navigation=|Open=|url=|file=|val=|validate=|domain=|callback=|return=|page=|feed=|host=|port=|next=|data=|reference=|site=)((http|https):\/\/)(([\w.-]*)\.([\w]*)\.([A-z]))\w+
- 
-(next=|url=|target=|rurl=|dest=|destination=|redir=|redirect_uri=|redirect_url=|redirect=|/redirect/|cgi-bin/|redirect.cgi|/out/|/out|view=|loginto=|image_url=|go=|return=|returnTo=|return_to=|checkout_url=|dest=|redirect=|uri=|path=|continue=|url=|window=|to=|out=|view=|dir=|show=|navigation=|Open=|url=|file=|val=|validate=|domain=|callback=|return=|page=|feed=|host=|port=|next=|data=|reference=|site=)(http|https)
-
-(next=|url=|target=|rurl=|dest=|destination=|redir=|redirect_uri=|redirect_url=|redirect=|/redirect/|cgi-bin/|redirect.cgi|/out/|/out|view=|loginto=|image_url=|go=|return=|returnTo=|return_to=|checkout_url=|dest=|redirect=|uri=|path=|continue=|url=|window=|to=|out=|view=|dir=|show=|navigation=|Open=|url=|file=|val=|validate=|domain=|callback=|return=|page=|feed=|host=|port=|next=|data=|reference=|site=)((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+
-
-
-```
-## video
-
-```
-https://www.youtube.com/watch?v=hsT5BL_EV-g
-https://youtu.be/hsT5BL_EV-g
-[![Watch the video](https://img.youtube.com/vi/hsT5BL_EV-g/1.jpg)](https://www.youtube.com/watch?v=hsT5BL_EV-g)
 
 ```
 ## Some Regex 
 ```
-Thank you 
 ```
 https://github.com/odomojuli
 https://github.com/odomojuli/RegExAPI
