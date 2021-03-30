@@ -49,7 +49,7 @@ for line in Lines:
     
                 print (colored.fg("green") ,"Regex: ",regex)
                 print(colored.fg("red") , "Match {matchNum} was found at: {match}".format(matchNum = matchNum, start = match.start(), end = match.end(), match = match.group()), '\n')
-                f = open('out.txt.txt', 'a')
+                f = open('out.txt', 'a')
                 L = [ip, '\n', "Regex: ", regex, '\n', "Match {matchNum} was found at : {match}".format(matchNum = matchNum, start = match.start(), end = match.end(), match = match.group()),'\n']
                 f.writelines(L)
                 f.close()
@@ -58,3 +58,4 @@ for line in Lines:
         # A serious problem happened, like an SSLError or InvalidURL
         print("Error: {}".format(e))    
 
+print("\n\nYou can see the results in out.txt file")
