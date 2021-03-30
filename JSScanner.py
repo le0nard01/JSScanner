@@ -10,43 +10,17 @@ import os
 import colored
 from colored import stylize
 urllib3.disable_warnings()
-print(colored.fg("red"), 
-     "╔════════════════════════════════════════════════════════════════╗\n"
-      "║                    Devlope By 0x240x23elu                      ║\n"
-      "║                                                                ║\n"
-      "╚════════════════════════════════════════════════════════════════╝")
-print("╔════════════════════════════════════════════════════════════════╗\n"
-      "║                                                                ║\n"
-      "║                           WARNING                              ║\n"
-      "║                                                                ║\n"
-      "║      I highly recommend using this tool by using Kali Linux OS ║\n"
-      "║                                                                ║\n"
-      "║      By using this tool it means you agree with terms,         ║\n"
-      "║      conditions, and risks                                     ║\n"
-      "║                                                                ║\n"
-      "║      By using this tool you agree that                         ║\n"
-      "║      1. use for legitimate security testing                    ║\n"
-      "║      2. not for crime                                          ║\n"
-      "║      3. the use of this tool solely for                        ║\n"
-      "║         educational reasons only                               ║\n"
-      "║                                                                ║\n"
-      "║      By using this tool you agree that                         ║\n"
-      "║      1. You are willing to be charged with criminal or state   ║\n"
-      "║         law applicable by law enforcement officers             ║\n"
-      "║         and government when abused                             ║\n"
-      "║      2. the risk is borne by yourself                          ║\n"
-      "║                                                                ║\n"
-      "║         Thank you and happy pentest                            ║\n"
-      "║                                                                ║\n"
-      "╚════════════════════════════════════════════════════════════════╝")
 
-path = input("Please Enter Any File: ") 
-reg = input("Path Of Regex/Patten File: ")
+path = input("Path of the file containing the urls: ") 
+reg = input("Path of the file containing the regex: ")
 list=[] 
 file1 = open(path, 'r')
 Lines = file1.readlines() 
 count = 0
 # Strips the newline character
+
+print('-----------------------------//-----------------------')
+
 for line in Lines: 
     ip = line.strip()
     print(colored.fg("white"), ip)
@@ -70,7 +44,6 @@ for line in Lines:
         Lines2 = file2.readlines()
         for line2 in Lines2: 
             regex = line2.strip()
-        #print(regex)
             matches = re.finditer(regex, str(results), re.MULTILINE)
             for matchNum, match in enumerate(matches, start=1):
     

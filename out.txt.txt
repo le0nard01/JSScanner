@@ -1,0 +1,3 @@
+https://portal.credz.com.br/js/482f2e12.6118f7ea.js
+Regex: s3-[a-zA-Z0-9-\.\_\/]
+Match 1 was found at : s3-s
